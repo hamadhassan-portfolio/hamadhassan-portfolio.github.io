@@ -1,0 +1,46 @@
+{
+  "name": "Hamad Hassan",
+  "email": "contact.hamadhassan@gmail.com",
+  "whatsapp": "+92 349 351 3556",
+  "location": "Rawalpindi/Taxila, Pakistan",
+  "gpa": "3.1",
+  "university": "University of Engineering and Technology, Taxila",
+  "portfolio": "https://hamadhassan-portfolio.github.io/",
+  "github": "github.com/Hamad-Hassan",
+  "internship": [
+    "Assisted senior engineers in visual weld quality inspections and monitoring thickness tolerances at HMC Taxila.",
+    "Supported maintenance teams in logging equipment downtime logs to calculate OEE, MTBF, and MTTR.",
+    "Assisted in 5S layout audits and workshop hazard mapping within machining bays."
+  ],
+  "softwares": [
+    "MS Excel",
+    "MS Project",
+    "AutoCAD",
+    "SolidWorks",
+    "ANSYS",
+    "Primavera P6"
+  ],
+  "skills": [
+    "Plant Maintenance",
+    "Utilities Optimization",
+    "QA/QC Inspection",
+    "OEE Tracking",
+    "Boiler Operations",
+    "Reliability Engineering",
+    "5S & TPM",
+    "Shaft Alignment"
+  ],
+  "certifications": [
+    "Microsoft Office Specialist: Excel Advanced (Microsoft)",
+    "Lean Six Sigma Green Belt",
+    "Primavera P6 Professional Project Management Certification",
+    "Certified SolidWorks Associate (CSWA)"
+  ],
+  "standards": [
+    "ASME Section VIII",
+    "ASME Sec V (NDT)",
+    "API 570",
+    "ASHRAE",
+    "NFPA"
+  ]
+}
