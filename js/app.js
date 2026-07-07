@@ -54,16 +54,19 @@ function populateProfileData(profile) {
 
   // 1. Text elements
   if (document.getElementById('doc-name')) document.getElementById('doc-name').innerText = profile.name || "Hamad Hassan";
+  if (document.getElementById('doc-title')) document.getElementById('doc-title').innerText = "Mechanical Engineer";
   
-  // 2. Contact details line
+  // 2. Contact details line (Email, WhatsApp, Location, and LinkedIn)
   const contactLine = document.getElementById('doc-contact-line');
   if (contactLine) {
     contactLine.innerHTML = `
-      <span><i class="fa-solid fa-envelope"></i> ${profile.email}</span>
+      <span><i class="fa-solid fa-envelope"></i> <a href="mailto:${profile.email}">${profile.email}</a></span>
       <span>|</span>
-      <span><i class="fa-brands fa-whatsapp"></i> ${profile.whatsapp}</span>
+      <span><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/${profile.whatsapp.replace(/[^0-9]/g, '')}" target="_blank">${profile.whatsapp}</a></span>
       <span>|</span>
       <span><i class="fa-solid fa-location-dot"></i> ${profile.location}</span>
+      <span>|</span>
+      <span><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/engr-hamadhassan" target="_blank">linkedin.com/in/engr-hamadhassan</a></span>
     `;
   }
 
@@ -84,6 +87,7 @@ function populateProfileData(profile) {
     const filename = `${profile.name.replace(/\s+/g, '_')}_CV.pdf`;
     cvBtn.href = `assets/${filename}`;
     cvBtn.download = filename;
+    cvBtn.innerHTML = `<i class="fa-solid fa-download"></i> Download CV (PDF)`;
   }
 
   // 5. Abstract
@@ -91,7 +95,7 @@ function populateProfileData(profile) {
   if (abstract) {
     abstract.innerHTML = `
       <p>
-        This dossier contains the compiled catalog of my <strong>17 industrial, utility, and simulation projects</strong> executed during my studies at <strong>${profile.university}</strong> and internship at <strong>Heavy Mechanical Complex (HMC) Taxila</strong>. My capabilities cover data-driven plant reliability tracking, thermodynamic deaerator calculations, boiler utilities, HVAC cleanroom modeling, and QA/QC weld inspections under ASME/API codes.
+        This dossier contains the compiled catalog of my <strong>17 industrial, utility, and simulation projects</strong> executed during my studies at <strong>University of Engineering and Technology, Taxila</strong> and internship at <strong>Heavy Mechanical Complex (HMC) Taxila</strong>. My capabilities cover data-driven plant reliability tracking, thermodynamic deaerator calculations, boiler utilities, HVAC cleanroom modeling, and QA/QC weld inspections under ASME/API codes.
       </p>
     `;
   }
