@@ -455,3 +455,48 @@ a {
     font-size: 1.8rem;
   }
 }
+
+/* Professional Experience Section Styles */
+.experience-section {
+  margin-bottom: 40px;
+}
+
+.experience-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-thin);
+  border-left: 4px solid var(--primary-color);
+  border-radius: 6px;
+  padding: 25px;
+  margin-top: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px dashed var(--border-thin);
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.company-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.role-title {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.exp-date {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
