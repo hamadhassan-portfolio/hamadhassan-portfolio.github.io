@@ -56,7 +56,7 @@ function populateProfileData(profile) {
   if (document.getElementById('doc-name')) document.getElementById('doc-name').innerText = profile.name || "Hamad Hassan";
   if (document.getElementById('doc-title')) document.getElementById('doc-title').innerText = "Mechanical Engineer";
   
-  // 2. Contact details line (Email, WhatsApp, Location, and LinkedIn)
+  // 2. Contact details line (Email, WhatsApp, Location)
   const contactLine = document.getElementById('doc-contact-line');
   if (contactLine) {
     contactLine.innerHTML = `
@@ -65,17 +65,14 @@ function populateProfileData(profile) {
       <span><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/${profile.whatsapp.replace(/[^0-9]/g, '')}" target="_blank">${profile.whatsapp}</a></span>
       <span>|</span>
       <span><i class="fa-solid fa-location-dot"></i> ${profile.location}</span>
-      <span>|</span>
-      <span><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/engr-hamadhassan" target="_blank">linkedin.com/in/engr-hamadhassan</a></span>
     `;
   }
 
-  // 3. Portfolio link line
+  // 3. LinkedIn & Affiliation line (Replaced Portfolio link with LinkedIn)
   const portfolioLine = document.getElementById('doc-portfolio-line');
   if (portfolioLine) {
-    const cleanUrl = profile.portfolio.replace(/https?:\/\//, '').replace(/\/$/, '');
     portfolioLine.innerHTML = `
-      <span>Portfolio: <strong class="blue-text">${cleanUrl}</strong></span>
+      <span>LinkedIn: <strong class="blue-text"><a href="https://linkedin.com/in/engr-hamadhassan" target="_blank">linkedin.com/in/engr-hamadhassan</a></strong></span>
       <span>|</span>
       <span>Affiliation: <strong>${profile.university}</strong> & <strong>HMC Taxila</strong></span>
     `;
