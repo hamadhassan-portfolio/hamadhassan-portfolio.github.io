@@ -1,0 +1,201 @@
+[
+  {
+    "id": 1,
+    "title": "Downtime Analysis and MTBF/MTTR Reliability Dashboard",
+    "category": "maintenance",
+    "tools": "MS Excel, Data Analysis, Pareto Principle",
+    "description": "Designed and formulated a dynamic maintenance tracking dashboard template in MS Excel to analyze machine downtime on a simulated manufacturing line. The dashboard compiles daily breakdown logs, categorizes failure types, and calculates reliability metrics including Mean Time Between Failures (MTBF) and Mean Time To Repair (MTTR). Using Pareto analysis, modeled how targeting the top 20% of failure modes (specifically, pneumatic seal failures and bearing wear) would address 80% of total downtime. Developed a predictive maintenance scheduling model that shows a potential 18% reduction in machine downtime through optimized inspection intervals.",
+    "achievements": [
+      "Designed a custom Excel KPI dashboard template for maintenance scheduling.",
+      "Formulated automatic formulas for MTBF/MTTR tracking.",
+      "Modeled a potential 18% reduction in unplanned downtime using simulated maintenance logs."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Maintenance Lubrication Scheduling & Inventory Manager",
+    "category": "maintenance",
+    "tools": "MS Excel, VBA / Macros, Inventory Control (ROP/EOQ)",
+    "description": "Developed a VBA-driven Excel prototype to automate scheduling and lubrication tracking for a simulated workshop containing 50 mechanical assets (pumps, gearboxes, motors). The utility maps lubrication tasks based on operating hours and generates automated maintenance tickets. Integrated a theoretical inventory control model calculating Economic Order Quantity (EOQ) and Reorder Points (ROP) for critical lubricants and bearings. The model demonstrates a potential 15% reduction in inventory holding costs and projects a 100% compliance rate on lubrication cycles.",
+    "achievements": [
+      "Coded prototype VBA forms in Excel to log maintenance actions.",
+      "Integrated ROP/EOQ formulas to model inventory restocking triggers.",
+      "Designed scheduling algorithms showing a simulated 100% lubrication compliance rate."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Boiler Blowdown Heat Recovery and Efficiency Excel Calculator",
+    "category": "utilities",
+    "tools": "MS Excel, Thermodynamics, ASME PTC 4 (Boiler Test Code)",
+    "description": "Formulated an Excel heat-balance model to evaluate energy recovery from industrial steam boilers. Calculated energy loss due to continuous boiler blowdown under varying feed water qualities. Modeled the design of a flash tank and heat exchanger system to recover flash steam and preheat incoming makeup water from 25°C to 80°C. Applied ASME PTC 4 calculations to show that installing the heat recovery system improves overall boiler efficiency by 2.4% and saves approximately $12,000 annually in fuel costs (based on Pakistani gas tariffs).",
+    "achievements": [
+      "Created a comprehensive boiler thermodynamic model in Excel.",
+      "Designed flash steam recovery system sizing calculations.",
+      "Projected payback period of 1.4 years for heat recovery equipment."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Compressed Air Leakage Audit & Energy Saving Model",
+    "category": "utilities",
+    "tools": "MS Excel, Industrial Auditing, Pneumatics",
+    "description": "Created an Excel-based utility compressed air leak audit tool for a textile weaving mill. Modeled pressure drops, airflow rates (CFM), and power consumption of a 75kW rotary screw compressor. The tool takes ultrasonic leak detector logs as input, calculates mass flow rate leakage through varying hole sizes, and computes equivalent electrical energy wastage (kWh and PKR). Developed an optimization model within the sheet demonstrating that lowering system operating pressure by 1.0 bar decreases compressor power draw by 7%.",
+    "achievements": [
+      "Built Excel model translating pressure drop and leak diameters into cost.",
+      "Audited leakage rates, identifying 250 CFM of potential air saving.",
+      "Modeled 7% energy cost reduction through operating pressure optimization."
+    ]
+  },
+  {
+    "id": 5,
+    "title": "HVAC Cooling Load Calculation & Duct Layout for a Cleanroom",
+    "category": "utilities",
+    "tools": "MS Excel, ASHRAE Standards, AutoCAD",
+    "description": "Designed an HVAC system for a pharmaceutical manufacturing cleanroom requiring ISO 8 cleanliness standards. Created an ASHRAE CLTD-compliant Excel calculator to determine cooling loads, taking solar radiation, transmission, infiltration, and internal heat gains (equipment, lighting, personnel) into account. Determined sensible/latent heat ratios, calculated required CFM for air change rates, and designed the supply/return duct routing in AutoCAD.",
+    "achievements": [
+      "Designed ASHRAE-compliant CLTD heat load calculator in Excel.",
+      "Calculated a total cooling load of 35 TR with a requirement of 20 Air Changes per Hour (ACH).",
+      "Completed 2D layouts of ducting networks and diffuser placements in AutoCAD."
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Piping Hydraulics and Pump Selection Excel Model for RO Plant",
+    "category": "utilities",
+    "tools": "MS Excel, Fluid Mechanics, ASME/API Standards",
+    "description": "Developed a piping network hydraulic design tool in Excel to optimize flow and pump selection for an industrial Reverse Osmosis (RO) water treatment system. Calculated major friction losses using the Darcy-Weisbach equation and minor losses for valves, elbows, and membrane housings. Generated system head curves for varying flow rates and cross-referenced pump performance curves to select the optimal centrifugal pump, ensuring operation at the Best Efficiency Point (BEP).",
+    "achievements": [
+      "Created friction factor iteration loops in Excel (Colebrook-White equation).",
+      "Generated dynamic system head curve vs. pump curve graphs.",
+      "Selected centrifugal pumps reducing energy consumption by 11% compared to oversized defaults."
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Production Shop Floor Productivity and OEE Dashboard",
+    "category": "production",
+    "tools": "MS Excel, Lean Manufacturing, OEE Metrics",
+    "description": "Developed an Excel-based operations dashboard template to monitor shop floor productivity and calculate Overall Equipment Effectiveness (OEE). The tool tracks availability, performance, and quality. Modeled historical production data to highlight speed losses and idling bottlenecks, providing supervisors with daily actionable summaries. Tested the model using simulated production runs, demonstrating how data-driven operational scheduling can improve OEE from 62% to 74%.",
+    "achievements": [
+      "Built user-friendly Excel interfaces for shop floor operators to input simulated daily logs.",
+      "Formulated automated OEE dashboards highlighting underperforming shifts.",
+      "Modeled data-driven operational decisions that project an OEE improvement from 62% to 74%."
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Design, FEA, and ASME Sec VIII LPG Storage Vessel",
+    "category": "production",
+    "tools": "SolidWorks, ANSYS FEA, ASME Formulas, MS Excel",
+    "description": "Participated in a design case study at HMC Taxila for a horizontal LPG storage vessel. Formulated an Excel design sheet containing ASME Section VIII Division 1 formulas to calculate shell thickness, hemispherical head thickness, nozzle reinforcement, and saddle support stresses. Modeled the vessel in SolidWorks and imported the geometry into ANSYS Static Structural to verify stress concentrations around nozzles under internal pressures up to 1.7 MPa.",
+    "achievements": [
+      "Designed a custom ASME code calculator sheet in Excel.",
+      "Validated hand/ASME calculations using ANSYS FEA within 5% error margins.",
+      "Optimized vessel weight, saving 12% in material requirements."
+    ]
+  },
+  {
+    "id": 9,
+    "title": "ASME & API Compliant Welded Joint Quality Inspection & NDT Plan",
+    "category": "quality",
+    "tools": "MS Excel, ASME Sec V, API 570, NDT (UT/RT/PT)",
+    "description": "Developed a QA/QC inspection and Non-Destructive Testing (NDT) plan framework for welded joints in heavy steel structures, inspired by observations during internship at HMC Taxila. Drafted inspection templates in Excel following ASME Section V standards for Ultrasonic Testing (UT), Dye Penetrant Testing (PT), and Radiographic Testing (RT). Coded a statistical Pareto analysis template in Excel to analyze welding defects (porosity, slag inclusion, lack of fusion), providing a framework that models a reduction in weld repair rates from 5.4% to 2.1% through targeted welder training.",
+    "achievements": [
+      "Structured comprehensive NDT inspection checklists in Excel.",
+      "Created a simulated defect logging and Pareto analyzer template.",
+      "Designed a welder performance tracking framework to reduce repairs."
+    ]
+  },
+  {
+    "id": 10,
+    "title": "TPM & 5S Shop Floor Re-layout for HMC Machining Workshop",
+    "category": "quality",
+    "tools": "AutoCAD, MS Excel, 5S Methodology, TPM Principles",
+    "description": "Designed a proposed Lean factory layout optimization plan for the heavy machining workshop at HMC Taxila as a case study. Conducted safety audits and tool retrieval time studies, logging the data in Excel. Redesigned the tool storage cabinets and workstation placements in AutoCAD using cellular manufacturing principles. The proposed layout is modeled to minimize operator movement, segregate walkways, and reduce tool retrieval times from 4.5 minutes to a simulated 45 seconds.",
+    "achievements": [
+      "Modeled tool retrieval times and walking distances in Excel.",
+      "Re-designed shop floor layout in AutoCAD.",
+      "Projected a simulated 5S audit score improvement from 45% to 85%."
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Scheduling & Budget Tracking for 50-Ton Overhead Crane Installation",
+    "category": "projectsourcing",
+    "tools": "MS Project, MS Excel, Earned Value Management",
+    "description": "Developed a project schedule and budget tracking simulation system for the fabrication and installation of a 50-ton industrial overhead crane. Created a Work Breakdown Structure (WBS) and Gantt chart in MS Project, defining critical paths and resource allocation. Exported tracking data to Excel to construct Earned Value Management (EVM) sheets, plotting Planned Value (PV), Earned Value (EV), and Actual Cost (AC) to track cost and schedule variance.",
+    "achievements": [
+      "Generated critical-path schedule in MS Project with over 120 tasks.",
+      "Constructed dynamic EVM S-curves in Excel for senior management review.",
+      "Identified potential schedule delays, recommending mitigation steps to save 5 project days."
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Technical Bid Evaluation and Spares Inventory Procurement Tool",
+    "category": "projectsourcing",
+    "tools": "MS Excel, MCDA Matrix, EOQ Sourcing",
+    "description": "Designed an Excel tool prototype to streamline the procurement technical evaluation process for spare parts of industrial machinery (compressors, pumps, turbines). The tool uses a Multi-Criteria Decision Analysis (MCDA) matrix, weighing vendor technical bids based on material certification, lead time, warranty, and cost. Integrated an Economic Order Quantity (EOQ) calculator to determine optimal purchase quantities for high-frequency utility spares, minimizing holding costs.",
+    "achievements": [
+      "Built a standardized technical evaluation template in Excel.",
+      "Integrated EOQ and Safety Stock formulas to prevent maintenance delays.",
+      "Reduced spare parts procurement cycle time by 20%."
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Detailed 3D CAD Design and Assembly of a V8 Engine",
+    "category": "production",
+    "tools": "SolidWorks, CAD Modeling, Mechanical Assembly",
+    "description": "Modeled a complete V8 internal combustion engine block and moving assemblies from scratch using SolidWorks. Designed the crankshaft, connecting rods, pistons, camshafts, and intake/exhaust valves. Performed motion simulation and interference detection on assemblies to ensure zero component collisions and verify thermodynamic timing operations in a virtual test environment.",
+    "achievements": [
+      "Created a 3D assembly consisting of over 150 unique moving mechanical components.",
+      "Performed clearance and collision analysis to ensure proper valve-to-piston timing."
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Finite Element Analysis (FEA) and Thermal Stress Study of Finned Heat Exchanger",
+    "category": "utilities",
+    "tools": "ANSYS Static Structural, ANSYS Thermal, SolidWorks",
+    "description": "Modeled and conducted a coupled thermal-structural Finite Element Analysis (FEA) of a tube-and-fin heat exchanger under high thermal loading. Calculated temperature distributions across fins and tubes, and imported the thermal profile into the static structural module to analyze thermal stresses and deformation behavior, locating stress concentrations near tube-sheet weld joints.",
+    "achievements": [
+      "Modeled thermal expansion and stress concentration factors (Kt) around nozzle welds.",
+      "Recommended modifications to fin spacing that reduced thermal stress hotspots by 12% in ANSYS simulations."
+    ]
+  },
+  {
+    "id": 15,
+    "title": "CFD Aerodynamic Analysis and Optimization of a Commercial Plane Wing",
+    "category": "production",
+    "tools": "ANSYS Fluent, CFD, CAD Modeling",
+    "description": "Performed a Computational Fluid Dynamics (CFD) aerodynamic study of a NACA 4-digit airfoil wing geometry in ANSYS Fluent. Evaluated pressure distributions, velocity vectors, and turbulence intensity at varying angles of attack (AoA) to determine stall characteristics, drag coefficients (Cd), and lift coefficients (Cl).",
+    "achievements": [
+      "Modeled airfoil lift/drag curves for angles of attack ranging from -5 to +20 degrees.",
+      "Identified the critical stall angle (15 degrees) and drag-induction wake zones in boundary layers."
+    ]
+  },
+  {
+    "id": 16,
+    "title": "CFD Flow Distribution Analysis and Pressure Drop Study in a Ventilating Duct",
+    "category": "hvac",
+    "tools": "ANSYS Fluent, CFD, Fluid Mechanics",
+    "description": "Executed a steady-state Computational Fluid Dynamics (CFD) flow simulation of air passing through a complex duct network with sharp elbows and transitions. Modeled pressure losses, velocity variations, and turbulence generation to identify flow separation zones causing high pressure drops.",
+    "achievements": [
+      "Mapped friction factor variations and velocity profiles across duct junctions.",
+      "Proposed guide vane modifications that theoretically reduced pressure drop by 15%, lowering required fan power."
+    ]
+  },
+  {
+    "id": 17,
+    "title": "CAD Design, DFMA, and Injection Molding Study of a Mobile Stand",
+    "category": "production",
+    "tools": "SolidWorks, Mold Design, DFMA",
+    "description": "Designed an ergonomic, adjustable mobile stand in SolidWorks. Conducted Design for Manufacturing and Assembly (DFMA) reviews to minimize part count, optimize split lines, and ensure draft angles for plastic injection molding. Simulated the mold filling process to optimize gating locations and prevent shrinkage defects.",
+    "achievements": [
+      "Reduced component count by 30% through snap-fit joint optimization.",
+      "Performed draft analysis to verify seamless ejection from injection molds."
+    ]
+  }
+]
