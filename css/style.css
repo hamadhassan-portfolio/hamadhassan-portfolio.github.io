@@ -1,0 +1,457 @@
+/* CSS Variables for Premium Blue, White & Black Technical Catalog Theme */
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-accent: #f0f7ff; /* Soft ice blue */
+  --primary-color: #2563eb; /* Cobalt Blue */
+  --primary-hover: #1d4ed8;
+  --primary-glow: rgba(37, 99, 235, 0.08);
+  
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  
+  --border-color: #cbd5e1;
+  --border-thin: #e2e8f0;
+  
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f1f5f9; /* Soft grey page backdrop */
+  color: var(--text-primary);
+  line-height: 1.6;
+  padding: 40px 20px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-smooth);
+}
+
+.blue-text {
+  color: var(--primary-color);
+}
+
+/* ==========================================
+   DOCUMENT DOSSIER FRAME
+   ========================================== */
+.portfolio-document {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 50px 60px;
+  box-shadow: var(--shadow-sm);
+}
+
+/* ==========================================
+   LETTERHEAD HEADER
+   ========================================== */
+.dossier-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 2px solid var(--text-primary);
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.engineer-name {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.engineer-subtitle {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contact-line, .portfolio-link-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin-bottom: 5px;
+}
+
+.contact-line i {
+  color: var(--primary-color);
+}
+
+/* ==========================================
+   INTRODUCTORY ABSTRACT
+   ========================================== */
+.document-abstract {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  border-left: 4px solid var(--primary-color);
+  padding-left: 20px;
+  margin-bottom: 35px;
+}
+
+.document-abstract strong {
+  color: var(--text-primary);
+}
+
+/* ==========================================
+   TECHNICAL COMPETENCY MATRIX
+   ========================================== */
+.technical-matrix {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  border-bottom: 1px solid var(--border-thin);
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+
+.matrix-column h4 {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.matrix-column p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* ==========================================
+   LINEAR PROJECT CATALOG LIST
+   ========================================== */
+.catalog-section-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  border-bottom: 1px solid var(--text-primary);
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.catalog-item {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-thin);
+  border-left: 4px solid var(--primary-color);
+  border-radius: 6px;
+  padding: 30px 25px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+/* Project Header Area */
+.project-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed var(--border-thin);
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.project-title-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.project-code {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  background: var(--bg-accent);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.project-title-text {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+}
+
+.project-category-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  border: 1px solid var(--border-thin);
+  padding: 3px 8px;
+  border-radius: 4px;
+  background-color: var(--bg-secondary);
+}
+
+/* Tools Row details */
+.project-tools-row {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+/* Project Main Grid layout */
+.project-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 30px;
+}
+
+.content-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.block-title {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.project-desc-text {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.bullets-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bullets-list li {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  position: relative;
+  padding-left: 24px;
+}
+
+.bullets-list li::before {
+  content: "\f058"; /* checkmark icon */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 0.85rem;
+}
+
+/* Right Blueprint Box layout */
+.content-right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.blueprint-frame {
+  border: 1px solid var(--border-thin);
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.blueprint-frame img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.blueprint-fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.blueprint-fallback i {
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+}
+
+.blueprint-fallback span {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.action-block {
+  width: 100%;
+}
+
+.pdf-btn {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* ==========================================
+   BUTTON LAYOUTS
+   ========================================== */
+.btn {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: var(--transition-smooth);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--bg-primary);
+  border: 1px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  box-shadow: 0 4px 12px var(--primary-glow);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn-outline:hover {
+  background-color: var(--tag-bg);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* ==========================================
+   COMMON UTILS & RESPONSIVENESS
+   ========================================== */
+.loader {
+  text-align: center;
+  padding: 60px 0;
+  font-size: 1rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.dossier-footer {
+  border-top: 1px solid var(--border-thin);
+  padding-top: 30px;
+  margin-top: 60px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+@media (max-width: 900px) {
+  .portfolio-document {
+    padding: 30px;
+    margin: 10px auto;
+  }
+  
+  .dossier-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .header-right {
+    width: 100%;
+  }
+  
+  .header-right .btn {
+    width: 100%;
+  }
+  
+  .technical-matrix {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .project-content-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .blueprint-frame {
+    height: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .engineer-name {
+    font-size: 1.8rem;
+  }
+}
