@@ -1,4 +1,4 @@
-# Hamad Hassan — Portfolio
+# Hamad Hassan — Static Recruiter Portfolio
 
 This is a standalone, high-quality, lightweight web portfolio designed with a stark minimalist **black-and-white light aesthetic**. 
 
