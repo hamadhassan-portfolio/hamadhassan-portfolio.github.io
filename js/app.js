@@ -110,6 +110,14 @@ function populateProfileData(profile) {
   if (document.getElementById('matrix-standards') && profile.standards) {
     document.getElementById('matrix-standards').innerText = profile.standards.join(', ');
   }
+
+  // 7. Professional Experience bullets
+  const expBullets = document.getElementById('exp-bullets');
+  if (expBullets && profile.internship) {
+    expBullets.innerHTML = profile.internship.map(bullet => `
+      <li>${bullet.startsWith('-') ? bullet.substring(1).trim() : bullet.trim()}</li>
+    `).join('');
+  }
 }
 
 // Render catalog items statically in linear layout
